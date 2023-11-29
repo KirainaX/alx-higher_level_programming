@@ -7,4 +7,3 @@ def print_last_digit(number):
 
     print("{:d}".format(lastN), end="")
     return lastN
-    
