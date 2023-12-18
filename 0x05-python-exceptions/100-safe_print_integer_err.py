@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+import sys
+
 def safe_print_integer_err(value):
+    is_int = True
     try:
         print("{:d}".format(value))
-        return True
     except ValueError as err:
-        print("Exception:", err)
-        return False
+        print("Exception:", err, file=sys.stderr)
+    
+    return is_int
