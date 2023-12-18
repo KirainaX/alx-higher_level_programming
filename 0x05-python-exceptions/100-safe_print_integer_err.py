@@ -8,5 +8,4 @@ def safe_print_integer_err(value):
     except ValueError as err:
         print("Exception:", err, file=sys.stderr)
         is_int = False
-    
     return is_int
