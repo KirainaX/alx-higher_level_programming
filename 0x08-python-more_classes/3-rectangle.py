@@ -92,3 +92,20 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.__height + self.__width)
+    
+    def __str__(self):
+        """Prints the rectangle with the character # .
+
+        Returns:
+            str: the rectangle
+        """
+        rectangle = []
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rectangle.append("#")
+            rectangle.append("\n")
+        # remove blank line
+        rectangle.pop()
+        return "".join(rectangle)
