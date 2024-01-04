@@ -88,7 +88,6 @@ class Rectangle:
         Returns:
             int: perimeter.
         """
-
         if (self.__width == 0) or (self.__height == 0):
             return 0
         else:
