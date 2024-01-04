@@ -1,2 +1,1 @@
-alx-higher_level_programming
-My new project
+GitHub repository: alx-higher_level_programming
